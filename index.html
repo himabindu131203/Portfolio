@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talari Hima Bindu - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: "Poppins", sans-serif;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(18, 18, 62);
+            position: fixed;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(170, 107, 228);
+        }
+
+        main hr {
+            border: 0;
+            background: #9c97f1;
+            height: 0.5px;
+            margin: 110px 84px;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 78px;
+        }
+
+        .firstSection>div {
+            width: 30%;
+        }
+
+        .secondSection>p {
+            text-align: justify;
+            margin-left: 150px;
+            margin-top: -150px;
+            font-weight: 100px;
+            font-size: larger;
+        }
+
+        .leftSection {
+            font-size: 3rem;
+            margin-bottom: 150px;
+        }
+
+        .rightSection img {
+            border-radius: 50%;
+            margin-left: 50px;
+            margin-top: -20px;
+        }
+
+        .purple {
+            color: rgb(170, 107, 228);
+        }
+
+        #element {
+            color: rgb(170, 107, 228);
+        }
+
+        .thirdSection {
+            max-width: 80vw;
+            margin: auto;
+            margin-top: -110px;
+            height: 85vh;
+        }
+
+        .thirdSection h1 {
+            margin-top: 200px;
+            font-size: 3rem;
+            text-align: center;
+        }
+
+        .thirdSection .box {
+            background: white;
+            width: 80vw;
+            height: 2px;
+            margin: 80px 0;
+            display: flex;
+        }
+
+        .thirdSection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            color: white;
+            margin: 0 200px;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 100px;
+            font-size: 2.5rem;
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 150px;
+            color: rgb(157, 154, 154);
+            width: 100px;
+            font-size: 2rem;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Hima Bindu</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">Skills</a></li>
+                    <li><a href="/">Profiles</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, My name is <span class="purple">Talari Hima Bindu</span>
+                <div>and I am a </div>
+                <span id="element"></span>
+            </div>
+            <div class="rightSection">
+                <img src="bg.jpg" alt="" height="500" width=400">
+            </div>
+        </section>
+        <section class="secondSection">
+            <p>A passionate developer with a strong background in</br>computer science and mathematics. Always eager to
+                learn new</br>technologies and contribute to projects that make the world.</p>
+        </section>
+        <hr>
+        <section class="thirdSection">
+            <h1><u>Skills</u></h1>
+            <div class="box">
+                <div class="vertical">
+                    <div class="vertical-title">
+                        <u>Frontend</u>
+                    </div>
+                    <div class="vertical-desc">
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="vertical">
+                    <div class="vertical-title">
+                        <u>Languages</u>
+                    </div>
+                    <div class="vertical-desc">
+                        <ul>
+                            <li>Python</li>
+                            <li>C++</li>
+                            <li>C</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="vertical">
+                    <div class="vertical-title">
+                        <u>Others</u>
+                    </div>
+                    <div class="vertical-desc">
+                        <ul>
+                            <li>DSA</li>
+                            <li>Git</li>
+                            <li>Github</li>
+                            <li>Unix</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer'],
+            typeSpeed: 50,
+            autoStart: true,
+            loop: true,
+        });
+    </script>
+</body>
+
+</html>
