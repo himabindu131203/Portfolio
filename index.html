@@ -12,6 +12,7 @@
         * {
             margin: 0;
             padding: 0;
+            scroll-behavior: smooth;
         }
 
         body {
@@ -20,12 +21,15 @@
             font-family: "Poppins", sans-serif;
         }
         nav{
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 99;
             display: flex;
             justify-content: space-around;
             align-items: center;
             height: 80px;
             background-color: rgb(18, 18, 62);
-            position: fixed;
         }
 
         nav ul {
@@ -62,7 +66,7 @@
             display: flex;
             justify-content: space-around;
             align-items: center;
-            margin-top: 78px;
+            margin-top: 150px;
         }
 
         .firstSection>div {
@@ -99,21 +103,20 @@
         .thirdSection {
             max-width: 80vw;
             margin: auto;
-            margin-top: -110px;
-            height: 85vh;
+            height: 86vh;
         }
 
         .thirdSection h1 {
-            margin-top: 200px;
             font-size: 3rem;
             text-align: center;
+            margin: 200px 0;
         }
 
         .thirdSection .box {
             background: white;
             width: 80vw;
             height: 2px;
-            margin: 80px 0;
+            margin: 200px 0;
             display: flex;
         }
 
@@ -139,27 +142,65 @@
             font-size: 2rem;
             margin-left: 10px;
         }
+        .fourthSection {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: sans-serif;
+            text-align: center;
+            background-color: rgb(0, 0, 33);
+            height: 85vh;
+        }
+        .fourthSection h1{
+            margin-top: 100px;
+        }
+        .card-container{
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+            flex-wrap: wrap;
+        }
+        .card{
+            width: 250px;
+            background-color: white;
+            border-radius: 50px;
+            overflow: hidden;
+            box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+            margin: 50px;
+        }
+        .card img{
+            width: 100%;
+            height: auto;
+        }
+        .card-content{
+            padding: 16px;
+        }
+        .card-content h3{
+            font-size: 28px;
+            margin-bottom: 8px;
+            color: black;
+        }
     </style>
 </head>
 
 <body>
-    <header>
+    <div class="cont">
         <nav>
             <div class="left">Hima Bindu</div>
             <div class="right">
                 <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/">Skills</a></li>
-                    <li><a href="/">Profiles</a></li>
-                    <li><a href="/">Projects</a></li>
-                    <li><a href="/">Contact Me</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#profiles">Profiles</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
                 </ul>
             </div>
         </nav>
-    </header>
+    </div>
 
     <main>
-        <section class="firstSection">
+        <section class="firstSection" id="#">
             <div class="leftSection">
                 Hi, My name is <span class="purple">Talari Hima Bindu</span>
                 <div>and I am a </div>
@@ -174,7 +215,7 @@
                 learn new</br>technologies and contribute to projects that make the world.</p>
         </section>
         <hr>
-        <section class="thirdSection">
+        <section class="thirdSection" id="skills">
             <h1><u>Skills</u></h1>
             <div class="box">
                 <div class="vertical">
@@ -212,6 +253,29 @@
                             <li>Github</li>
                             <li>Unix</li>
                         </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="fourthSection" id="profiles">
+            <h1><u>Profiles</u></h1>
+            <div class="card-container">
+                <div class="card">
+                    <img src="code.jpeg">
+                    <div class="card-content">
+                        <h3><u>CodeChef</u></h3>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="leet.png">
+                    <div class="card-content">
+                        <h3><u>LeetCode</u></h3>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="github.png">
+                    <div class="card-content">
+                        <h3><u>GitHub</u></h3>
                     </div>
                 </div>
             </div>
