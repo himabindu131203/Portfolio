@@ -20,7 +20,8 @@
             color: white;
             font-family: "Poppins", sans-serif;
         }
-        nav{
+
+        nav {
             position: fixed;
             width: 100%;
             top: 0;
@@ -30,6 +31,7 @@
             align-items: center;
             height: 80px;
             background-color: rgb(18, 18, 62);
+
         }
 
         nav ul {
@@ -143,6 +145,7 @@
             font-size: 2rem;
             margin-left: 10px;
         }
+
         .fourthSection {
             margin: 0px;
             padding: 0px;
@@ -151,38 +154,48 @@
             text-align: center;
             background-color: rgb(0, 0, 33);
             height: 85vh;
+            padding-top: 30px;
+
         }
-        .fourthSection h1{
+
+        .fourthSection h1 {
             margin-top: 100px;
             font-size: 3rem;
         }
-        .card-container{
+
+        .card-container {
             display: flex;
             justify-content: center;
             margin-top: 50px;
             flex-wrap: wrap;
+            margin-top: 20px;
         }
-        .card{
+
+        .card {
             width: 250px;
             background-color: white;
             border-radius: 50px;
             overflow: hidden;
-            box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
             margin: 50px;
         }
-        .card img{
+
+        .card img {
             width: 100%;
             height: auto;
         }
-        .card-content{
+
+        .card-content {
             padding: 16px;
         }
-        .card-content h3{
+
+        .card-content h3 {
             font-size: 28px;
             margin-bottom: 8px;
             color: black;
         }
-        .card-content .pro{
+
+        .card-content .pro {
             display: inline-block;
             padding: 8px 16px;
             background-color: rgb(214, 205, 205);
@@ -191,8 +204,79 @@
             border-radius: 4px;
             margin-top: 16px;
         }
-        .pro:hover{
+
+        .pro:hover {
             background-color: #9696ae;
+        }
+        .fifthSection {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: sans-serif;
+            text-align: center;
+            background-color: rgb(0, 0, 33);
+            height: 85vh;
+            padding-top: 5px;
+            margin-top: 100px;
+            margin-bottom: 100px;
+        }
+
+        .fifthSection h1 {
+            margin-top: 100px;
+            font-size: 3rem;
+        }
+
+        .card-container1 {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+            margin-left: 400px;
+            margin-right: 400px;
+            flex-wrap: wrap;
+            border-radius: 10px;
+            background-color: rgb(100, 100, 142);
+
+        }
+
+        .card1 {
+            width: 700px;
+            background-color: rgb(0, 0, 33);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0px 2px 4px white;
+            margin: 40px;
+
+        }
+
+        .card1 img {
+            width: 50%;
+            height: auto;
+            padding-top: 30px;
+            margin-right: 10px;
+        }
+
+        .card-content1 h3 {
+            font-size: 34px;
+            margin-bottom: 8px;
+            color: rgb(255, 255, 255);
+            padding: 16px;
+            text-align: center;
+        }
+
+        .pro1 {
+            display: inline-block;
+            padding: 8px 30px;
+            background-color: rgb(93, 93, 103);
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-top: 3px;
+            margin-bottom: 30px;
+
+        }
+
+        .pro1:hover {
+            background-color: rgb(52, 52, 97);
         }
     </style>
 </head>
@@ -272,27 +356,39 @@
             </div>
         </section>
         <section class="fourthSection" id="profiles">
-            <h1><u>Profiles</u></h1>
+            <h1>Profiles</h1>
             <div class="card-container">
                 <div class="card">
                     <img src="code.jpeg">
                     <div class="card-content">
-                        <h3><u>CodeChef</u></h3>
-                        <a href="https://www.codechef.com/users/himabindu2003" class="pro" target="_blank">View Profile</a>
+                        <h3>CodeChef</h3>
+                        <a href="https://www.codechef.com/users/himabindu2003" class="pro" target="_blank"><u>View Profile</u></a>
                     </div>
                 </div>
                 <div class="card">
                     <img src="leet.png">
                     <div class="card-content">
-                        <h3><u>LeetCode</u></h3>
-                        <a href="https://leetcode.com/u/talarihimabindu/" class="pro" target="_blank">View Profile</a>
+                        <h3>LeetCode</h3>
+                        <a href="https://leetcode.com/u/talarihimabindu/" class="pro" target="_blank"><u>View Profile</u></a>
                     </div>
                 </div>
                 <div class="card">
                     <img src="github.png">
                     <div class="card-content">
-                        <h3><u>GitHub</u></h3>
-                        <a href="https://github.com/himabindu131203" class="pro" target="_blank">View Profile</a>
+                        <h3>GitHub</h3>
+                        <a href="https://github.com/himabindu131203" class="pro" target="_blank"><u>View Projects</u></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="fifthSection" id="projects">
+            <h1>Projects</h1>
+            <div class="card-container1">
+                <div class="card1">
+                    <img src="port.jpg">
+                    <div class="card-content1">
+                        <h3>Portfolio</h3>
+                        <a href="https://www.codechef.com/users/himabindu2003" class="pro1" target="_blank"><u>View</u></a>
                     </div>
                 </div>
             </div>
